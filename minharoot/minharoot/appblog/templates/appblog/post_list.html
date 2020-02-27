@@ -1,28 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Pg's blog</title>
-  </head>
-  <body>
-    <div class="">
-        <h1><a href="/">Blog do PG</a></h1>
-    </div>
+{% extends 'appblog/base.html' %}
 
-    {% for post in posts %}
-      <div class="">
+{% block content %}
+
+  {% for post in posts %}
+
+    <div class="post">
+
+      <div class="date">
+        <br />
         <p>publicado: {{ post.published_date }}</p>
-        <h2><a href="#">{{ post.title }}</a></h2>
-        <p>{{ post.text | linebreaksbr }}</p>
       </div>
-    {% endfor %}
 
-    <div class="">
-      <p>publicado: 23.02.2020</p>
-      <h2><a href="#">Meu segundo post.</a></h2>
+      <h2><strong><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></strong></h2>
 
-      {{posts}}
-
+      <p>{{ post.text | linebreaksbr }}</p>
     </div>
-  </body>
-</html>
+  {% endfor %}
+{% endblock %}

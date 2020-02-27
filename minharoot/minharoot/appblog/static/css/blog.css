@@ -1,0 +1,74 @@
+
+body{
+
+  background-image: url(../img/a-cinza.jpg);
+}
+
+.page-header {
+
+    margin-top: 0px;
+    padding: 10px 10px 0px 0px;
+    text-indent: 700px;
+
+
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+
+    color: #FFFFFF;
+    font-size: 40pt;
+    text-decoration: none;
+    font-family: 'Sacramento';
+
+}
+
+.page-header h3{
+
+  font-family: 'Sacramento';
+}
+
+.content {
+
+    margin-left: 40px;
+
+}
+
+h1, h2, h3, h4 {
+
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+
+}
+
+.date {
+    color: #FFFFFF;
+    border-bottom: 1px #FFFFFF solid;
+    padding-bottom: 10px;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #FFFFFF;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 10px;
+    color:#000000;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.post h2 a, .post h2 a:visited {
+    color:#002776;
+}
